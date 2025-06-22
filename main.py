@@ -213,19 +213,31 @@
 # average(5)
 
 
-def average(*numbers):
-    sum = 0
-    for i in numbers:
-        sum = sum + i
-    return sum/len(numbers)
+# def average(*numbers):
+#     sum = 0
+#     for i in numbers:
+#         sum = sum + i
+#     return sum/len(numbers)
 
-c = average(10,2,3,4)
-print(c)
+# c = average(10,2,3,4)
+# print(c)
 
+# -----------------------------Start with 22 lesson-------------
 
+def getOutput():
+    a = int(input("Enter first number."))
+    a = int(input("Enter Second number."))
+    ot = input('Choose an options 1,2,3,4 :')
 
-
-
-
-
-
+    if ot == 1:
+        print( a+b)
+    if ot ==2:
+        print( a-b)
+    if ot ==3:
+        print( a*b)
+    if ot ==4:
+        print( a/b)
+    else:
+        print(ot)
+    
+getOutput()
