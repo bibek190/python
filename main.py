@@ -226,18 +226,21 @@
 
 def getOutput():
     a = int(input("Enter first number."))
-    a = int(input("Enter Second number."))
-    ot = input('Choose an options 1,2,3,4 :')
+    b = int(input("Enter Second number."))
+    ot = int(input('Choose an options 1:ADD,2:SUBSTRACT,3:MULTIPLY,4:DIVIDE :'))
 
     if ot == 1:
         print( a+b)
-    if ot ==2:
+    elif ot ==2:
         print( a-b)
-    if ot ==3:
+    elif ot ==3:
         print( a*b)
-    if ot ==4:
-        print( a/b)
+    elif ot ==4:
+        if(b != 0):
+            print( a/b)
+        else:
+            print('Cannot divide bt zero')
     else:
-        print(ot)
+        print('Invalid option selected')
     
 getOutput()
