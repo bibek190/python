@@ -336,41 +336,96 @@
 
 
 
-questions = [
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",3],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
-            ]
+# questions = [
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",3],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#     ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+#             ]
 
-levels = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+# levels = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 
 
 
-name = input("Enter your name ? ")
-print(f"Welcome to the quiz {name}. Here are your questions")
+# name = input("Enter your name ? ")
+# print(f"Welcome to the quiz {name}. Here are your questions")
 
-for i in range(0,len(questions)):
-    question = questions[i]
-    print(f"Question for price of {levels[i]}")
-    print(question[0])
-    print(f"a.{question[1]}          b.{question[2]}")
-    print(f"c.{question[3]}          d.{question[4]}")
-    reply = int(input("Choose the correct answer (1-4)."))
-    if(reply == question[-1]):
-        print("Correct answer")
-    else:
-        print("Wrong answer")
-        break
+# for i in range(0,len(questions)):
+#     question = questions[i]
+#     print(f"Question for price of {levels[i]}")
+#     print(question[0])
+#     print(f"a.{question[1]}          b.{question[2]}")
+#     print(f"c.{question[3]}          d.{question[4]}")
+#     reply = int(input("Choose the correct answer (1-4)."))
+#     if(reply == question[-1]):
+#         print("Correct answer")
+#     else:
+#         print("Wrong answer")
+#         break
     
 
+# numbers = [1,23,4,5,6,7,6,543,2,34,56,543,2,345,65,432,3,456,543,2,34]
+
+# fruits 
+
+# for i in fruits:
+#     print(i)
+
+
+# shopping lists:
+
+# shopping_list = [];
+
+# for i in range(10):
+#     print("\nOptions: 1. Add item  2. Show list  3. Remove item  4. Quit")
+#     reply = int(input("choose options :"))
+#     if(reply == 1):
+#         item = input("Enter item to add: ")
+#         shopping_list.append(item)
+#     elif(reply == 2):
+#         print(f"\n {shopping_list}"  )
+#         for i,item in enumerate(shopping_list):
+#             print(f"{i+1}. {item}")
+#     elif(reply == 3):
+#         item = input("Enter a item")
+#         if item in shopping_list:
+#             shopping_list.remove(item)
+#             print(f"{item} is removed")
+        
+#     else:
+#         print("Invalid Choice")
+#         break
+# print(shopping_list)
+    
+
+# def square(n):
+#     '''
+#     Takes in a number n, return the square of n
+#     '''
+#     print(n**2)
+# square(5)
+# print(square.__doc__)
+
+
+
+
+# factorial
+
+def factorial(n):
+    if(n == 0 or n == 1):
+        return 1
+    else:
+        return n * factorial(n-1)
+
+
+print(factorial(4))
 
 
 
@@ -379,3 +434,30 @@ for i in range(0,len(questions)):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+# shopping
+
+# shopping_list = []
+
+# print("Here are the shopping list you can choose to do!!")
+# for i in range(2):
+#     print("Choose an option")
+#     print("add = 1, show-list = 2, delete = 3 ,exit = 4")
+#     reply = int(input("Choose an option: "))
+    
+#     if(reply == 1):
+#         list = input("Add an item : ")
+#         shopping_list.append(list)
+# print(shopping_list) 
+    
