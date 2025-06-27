@@ -224,23 +224,51 @@
 
 # -----------------------------Start with 22 lesson-------------
 
-def getOutput():
-    a = int(input("Enter first number."))
-    b = int(input("Enter Second number."))
-    ot = int(input('Choose an options 1:ADD,2:SUBSTRACT,3:MULTIPLY,4:DIVIDE :'))
+# def getOutput():
+#     a = int(input("Enter first number."))
+#     b = int(input("Enter Second number."))
+#     ot = int(input('Choose an options 1:ADD,2:SUBSTRACT,3:MULTIPLY,4:DIVIDE :'))
 
-    if ot == 1:
-        print( a+b)
-    elif ot ==2:
-        print( a-b)
-    elif ot ==3:
-        print( a*b)
-    elif ot ==4:
-        if(b != 0):
-            print( a/b)
-        else:
-            print('Cannot divide bt zero')
-    else:
-        print('Invalid option selected')
+#     if ot == 1:
+#         print( a+b)
+#     elif ot ==2:
+#         print( a-b)
+#     elif ot ==3:
+#         print( a*b)
+#     elif ot ==4:
+#         if(b != 0):
+#             print( a/b)
+#         else:
+#             print('Cannot divide bt zero')
+#     else:
+#         print('Invalid option selected')
     
-getOutput()
+# getOutput()
+
+# def getOutput(a,b):
+#     c= int(input('Enter a number'))
+#     d= int(input('Enter a number'))
+#     def add(c,d):
+#         z = a+b+c+d
+#         return z
+#     return add(c,d)
+# print(getOutput(2,2)) 
+
+# Day 22---------------------------------------------------
+
+
+
+# if 7 in marks:
+#     print("yes")
+# else:
+#     print("no")
+marks = [3,5,6,8,9,"bibek",True]
+
+# print(marks)
+# print(type(marks))
+# print(marks[len(marks)-1]) 
+# print(marks[1:4:2])
+
+lst = [i for i in range(20) if i%2 == 0]
+print(lst)
+    
