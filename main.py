@@ -262,13 +262,120 @@
 #     print("yes")
 # else:
 #     print("no")
-marks = [3,5,6,8,9,"bibek",True]
+# marks = [3,5,6,8,9,"bibek",True]
 
-# print(marks)
-# print(type(marks))
-# print(marks[len(marks)-1]) 
-# print(marks[1:4:2])
+# # print(marks)
+# # print(type(marks))
+# # print(marks[len(marks)-1]) 
+# # print(marks[1:4:2])
 
-lst = [i for i in range(20) if i%2 == 0]
-print(lst)
+# lst = [i for i in range(20) if i%2 == 0]
+# print(lst)
     
+#append,sort,reverse,copy
+
+
+# l = [1,2,3,4,6,11,34];
+
+# # l.insert(1,899)
+# m = [200,500,700]
+
+# k = l+m
+
+# print(k)
+
+# names = ("hary","shyam","sonu","ram")
+# number = (1,3,5)
+
+# print(names)
+
+# countries = ("Spain","Italy","Nepal","Australia")
+# names1 = names[1:4]
+# print(names1)
+# temp = list(countries)
+# temp.append("Russia")
+# temp.append("bibek")
+# temp.pop()
+# temp[2] = 'Finland'
+# countries = tuple(temp)
+
+
+
+# print (countries)
+
+# import time
+
+
+
+# name = input("Enter your name : ")
+# t = time.strftime('%H%M%S')
+# hour = int(time.strftime('%H'))
+
+# if(0<=hour<12):
+#     print("Good Morning",name)
+# elif(12 <= hour <17):
+#     print("Good afternoon", name)
+# elif(17<hour <24):
+#     print("Good night", name)
+
+
+# print (hour)
+# name = input("Enter your Name: ")
+# print("Welcome " + name + " to crore Pati Show.You can will multiple prizes and $$$")
+# print("Here is your first Question....")
+# print('1. How many eye does lion have?  \n1 = 4\n2 = 2\n3 = 5\n4 = 10')
+# first_answer = int(input("Choose the correct answer : "))
+# if(first_answer == 2):
+#     print("You are correct. ✅")
+#     print("Lets go to next question")
+# else:
+#     print("Plese try again later")
+#     exit()
+
+
+
+
+
+questions = [
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",3],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",2],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+    ["What is the capital state of Australia","NSW","ACT","QLT","DARWIN",4],
+            ]
+
+levels = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+
+
+name = input("Enter your name ? ")
+print(f"Welcome to the quiz {name}. Here are your questions")
+
+for i in range(0,len(questions)):
+    question = questions[i]
+    print(f"Question for price of {levels[i]}")
+    print(question[0])
+    print(f"a.{question[1]}          b.{question[2]}")
+    print(f"c.{question[3]}          d.{question[4]}")
+    reply = int(input("Choose the correct answer (1-4)."))
+    if(reply == question[-1]):
+        print("Correct answer")
+    else:
+        print("Wrong answer")
+        break
+    
+
+
+
+
+
+
+
+
+
