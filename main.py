@@ -418,14 +418,14 @@
 
 # factorial
 
-def factorial(n):
-    if(n == 0 or n == 1):
-        return 1
-    else:
-        return n * factorial(n-1)
+# def factorial(n):
+#     if(n == 0 or n == 1):
+#         return 1
+#     else:
+#         return n * factorial(n-1)
 
 
-print(factorial(4))
+# print(factorial(4))
 
 
 
@@ -460,4 +460,105 @@ print(factorial(4))
 #         list = input("Add an item : ")
 #         shopping_list.append(list)
 # print(shopping_list) 
+    # 
     
+    
+    # Dictionaries 
+# student = {
+#         "name":"Bibek",
+#         "age":25,
+#         "course":"Python"
+#     }
+
+# car = {
+#     "brand": "Toyota",
+#     "model":"Corolla",
+#     "year":2020
+# }
+# car["year"] = 2025
+# car["owner"] = "Bibek"
+# car["color"] = "red"
+
+# if "model" in car:
+#     print("Yes, model is one of the ky")
+    
+# else:
+#     print("Donto print")
+
+# print(car)
+# print(car.values())
+
+# students = {
+#     "student1":{"name":"Bibek","age":25},
+#     "student2":{"name":"Hira","age":15},
+#     "student3":{"name":"Maan","age":35},
+# }
+# print(students['student1']["age"])
+
+# person = {
+#     "name":"Alex",
+#     "city":"Canberra",
+#     "age":22
+# }
+# person["age"] = 31
+# person["job"] = 'chef'
+
+
+
+# person.pop("city")
+# for keys,value in person.items():
+#     print(f"{keys} : {value}")
+# # print(person)
+# del person['name']
+# print(person)
+
+# For else loop---------------------------------
+
+# for item in python:
+#     # do somethings
+#     if conditons:
+#         break
+# else:
+#     # only run if loop donot break
+
+
+
+
+
+
+
+
+# numbers = [1,2,3,4,6,7,8]
+
+# for num in numbers:
+#     if num == 5:
+#         print('Found 5!')
+#         break
+# else:
+#     print("5 not found")
+
+
+# num = 110
+# for i in range(2,num):
+#     if num % i == 0:
+#         print(f"{num} is not a prime number")
+#         break
+# else:
+#     print(f"{num} is a prime number")
+
+
+# items = [2,4,6,8]
+
+# for i in items:
+#     if i %2 != 0:
+#         print(i)
+#         break
+# else:
+#     print("All numbers are eve
+names = ["Alice", "bob","Charlie","Alice"]
+for i in range(len(names)):
+    if names[i] in names[:i]:
+        print(f'Duplicate found : {names[i]}')
+        break
+else:
+    print("No duplicate found")
